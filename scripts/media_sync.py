@@ -458,9 +458,9 @@ def convert_video(
     cmd.extend(["-map", "0:v:0"])  # First video stream
     cmd.extend(["-map", "0:a"])    # All audio streams
 
-    # Strip problematic metadata, set clean title
+    # Strip global metadata but preserve stream metadata (language tags, etc.)
     output_title = Path(output_path).stem
-    cmd.extend(["-map_metadata", "-1"])
+    cmd.extend(["-map_metadata:g", "-1"])  # Strip only global metadata
     cmd.extend(["-metadata", f"title={output_title}"])
 
     # Video codec settings

@@ -309,7 +309,7 @@ def convert_samsung_safe(input_path: str, output_path: str, info: dict) -> bool:
     ffmpeg_args = [
         '-map', '0:v:0',           # Map first video stream
         '-map', '0:a',             # Map ALL audio streams
-        '-map_metadata', '-1',     # Strip all metadata
+        '-map_metadata:g', '-1',   # Strip global metadata, keep stream metadata
         '-c:v', 'libx264',         # H.264 video codec
         '-preset', 'medium',
         '-crf', '20',
@@ -334,7 +334,7 @@ def convert_samsung_surround(input_path: str, output_path: str, info: dict) -> b
     ffmpeg_args = [
         '-map', '0:v:0',           # Map first video stream
         '-map', '0:a',             # Map ALL audio streams
-        '-map_metadata', '-1',     # Strip global metadata
+        '-map_metadata:g', '-1',   # Strip global metadata, keep stream metadata
         '-c:v', 'libx264',         # H.264 video codec
         '-preset', 'medium',
         '-crf', '20',
@@ -358,7 +358,7 @@ def convert_samsung_4k(input_path: str, output_path: str, info: dict) -> bool:
     ffmpeg_args = [
         '-map', '0:v:0',           # Map first video stream
         '-map', '0:a',             # Map ALL audio streams
-        '-map_metadata', '-1',     # Strip global metadata
+        '-map_metadata:g', '-1',   # Strip global metadata, keep stream metadata
         '-c:v', 'libx265',         # HEVC video codec
         '-preset', 'medium',
         '-crf', '22',
@@ -383,7 +383,7 @@ def remux_to_mp4(input_path: str, output_path: str, info: dict) -> bool:
     ffmpeg_args = [
         '-map', '0:v:0',           # Map first video stream
         '-map', '0:a',             # Map ALL audio streams
-        '-map_metadata', '-1',     # Strip global metadata
+        '-map_metadata:g', '-1',   # Strip global metadata, keep stream metadata
         '-c:v', 'copy',            # Copy video
         '-c:a', 'copy',            # Copy audio
         '-movflags', 'faststart',
