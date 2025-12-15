@@ -1,0 +1,36 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local data (contains personal file paths)
+data/
+logs/
+incoming/
+
+# Local config (may contain custom paths)
+config.json
+
+# Lock files
+.media_sync.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local docs
+claude.md
