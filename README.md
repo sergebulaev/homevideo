@@ -1,8 +1,12 @@
 # HomeVideo
 
-Video sync and conversion toolkit for Samsung TV playback via MiniDLNA.
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)
+![Claude](https://img.shields.io/badge/Built_with-Claude_AI-CC785C?style=for-the-badge&logo=anthropic&logoColor=white)
 
-`Python` `FFmpeg` `rsync` `DLNA/UPnP` `SSH`
+Video sync and conversion toolkit for Samsung TV playback via MiniDLNA.
 
 ## What it does
 
@@ -73,5 +77,5 @@ Apache 2.0
 
 [Serge Bulaev](https://github.com/sergebulaev)
 
-- Telegram: [@sergeb](https://t.me/sergeb)
-- Blog: [bulaev.net](https://www.bulaev.net)
+[![Telegram](https://img.shields.io/badge/Follow-@sergiobulaev-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/sergiobulaev)
+[![Blog](https://img.shields.io/badge/Blog-bulaev.net-FF5722?style=for-the-badge&logo=substack&logoColor=white)](https://www.bulaev.net)
